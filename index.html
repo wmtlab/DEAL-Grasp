@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation." />
+    <title>DEAL-Grasp | Decoupled Alignment for Dexterous Grasp Synthesis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="top">
+      <section class="hero page-width">
+        <h1>DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation</h1>
+        <p class="authors"><span>Fuqiang Zhao</span>, <span>Qian Liu</span></p>
+        <p class="affiliations"><span>Dalian University of Technology</span></p>
+        <div class="resource-links" aria-label="Project resources">
+          <a class="resource-link" href="https://github.com/wmtlab/DEAL-Grasp" target="_blank" rel="noreferrer">
+            <img class="brand-icon" src="assets/icons/github.svg" width="24" height="24" alt="" />
+            <span>GitHub</span>
+          </a>
+          <a class="resource-link" href="https://wmtlab.github.io/DEAL-Grasp/" rel="noreferrer"><img class="brand-icon" src="assets/icons/arxiv-logomark.svg" width="24" height="24" alt="" /><span>arXiv</span></a>
+        </div>
+      </section>
+
+      <section class="teaser-section page-width">
+        <figure class="wide-figure">
+          <img src="assets/teaser.png" alt="DEAL-Grasp teaser figure" />
+          <figcaption>Unlike direct regression that amplifies root errors along kinematic chains or sampling schemes burdened by SO(3) discretization, DEAL-Grasp models dexterous grasping through a decoupled representation ℋ = {θ, 𝒳}. By combining heterogeneous continuous flow matching with closed-form Kabsch–SVD alignment, DEAL-Grasp reliably resolves global SE(3) poses and local articulations, achieving robust zero-shot grasp synthesis across diverse target objects.</figcaption>
+        </figure>
+      </section>
+
+      <section class="content-section page-width" id="abstract">
+        <p class="section-label">Abstract</p>
+        <p class="lead-copy">Synthesizing realistic articulated hand&ndash;object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with local articulation, which often yields unstable samples and physically implausible contacts. We introduce <strong>DEAL-Grasp</strong>, built upon the Decoupled Alignment (<strong>DEAL</strong>) representation, which reformulates grasp synthesis as alignment-space generation: the interaction state comprises task-space geometric anchors and articulation parameters, from which the rigid transform is recovered via closed-form Procrustes alignment while preserving local articulation. On this mixed state, we model grasp generation using heterogeneous-state flow matching with component-wise vector fields, incorporating time-adaptive physical regularization during training. At inference, grasps are synthesized solely by integrating the learned vector field, without test-time optimization or auxiliary physical guidance. Across MultiDex and zero-shot RealDex benchmarks, DEAL-Grasp attains high force-perturbation success rates alongside minimal penetration and high diversity on generated poses, while substantially reducing native inference latency compared to optimization-heavy baselines.</p>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="hero-video page-width" id="video">
+        <video controls playsinline preload="metadata" poster="assets/poster.jpg">
+          <source src="assets/video.mp4" type="video/mp4" />
+          Your browser does not support embedded video.
+        </video>
+        <p class="caption">This supplementary video presents the core motivation, outlines the DEAL representation design, and demonstrates physical validation on a UR10e manipulator mounted with a Shadow Dexterous Hand.</p>
+      </section>
+
+      <section class="citation page-width" id="bibtex">
+        <div class="bibtex-header">
+          <p class="section-label">BibTeX</p>
+          <button class="copy-bibtex-btn" type="button" title="Copy BibTeX to clipboard">
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@article{zhao2026dealgrasp,
+  title   = {DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation},
+  author  = {Zhao, Fuqiang and Liu, Qian},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}</code></pre>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
