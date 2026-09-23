@@ -11,8 +11,9 @@
     <main id="top">
       <section class="hero page-width">
         <h1>DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation</h1>
-        <p class="authors"><span>Fuqiang Zhao</span>, <span>Qian Liu</span></p>
+        <p class="authors"><span>Fuqiang Zhao</span>, <span>Qian Liu<sup>*</sup></span></p>
         <p class="affiliations"><span>Dalian University of Technology</span></p>
+        <p class="corresponding">* Corresponding author</p>
         <div class="resource-links" aria-label="Project resources">
           <a class="resource-link" href="https://github.com/wmtlab/DEAL-Grasp" target="_blank" rel="noreferrer">
             <img class="brand-icon" src="assets/icons/github.svg" width="24" height="24" alt="" />
@@ -31,7 +32,7 @@
 
       <section class="content-section page-width" id="abstract">
         <p class="section-label">Abstract</p>
-        <p class="lead-copy">Synthesizing realistic articulated hand&ndash;object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with local articulation, which often yields unstable samples and physically implausible contacts. We introduce <strong>DEAL-Grasp</strong>, built upon the Decoupled Alignment (<strong>DEAL</strong>) representation, which reformulates grasp synthesis as alignment-space generation: the interaction state comprises task-space geometric anchors and articulation parameters, from which the rigid transform is recovered via closed-form Procrustes alignment while preserving local articulation. On this mixed state, we model grasp generation using heterogeneous-state flow matching with component-wise vector fields, incorporating time-adaptive physical regularization during training. At inference, grasps are synthesized solely by integrating the learned vector field, without test-time optimization or auxiliary physical guidance. Across MultiDex and zero-shot RealDex benchmarks, DEAL-Grasp attains high force-perturbation success rates alongside minimal penetration and high diversity on generated poses, while substantially reducing native inference latency compared to optimization-heavy baselines.</p>
+        <p class="lead-copy">Synthesizing realistic articulated hand&ndash;object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with local articulation, which often yields unstable samples and physically implausible contacts. We introduce <strong>DEAL-Grasp</strong>, built upon the Decoupled Alignment (<strong>DEAL</strong>) representation, which reformulates grasp synthesis as alignment-space generation: the interaction state comprises task-space geometric anchors and articulation parameters, from which the rigid transform is recovered via closed-form Procrustes alignment while preserving local articulation. On this mixed state, we model grasp generation using heterogeneous-state flow matching with component-wise vector fields, incorporating time-adaptive physical regularization during training. At inference, grasps are synthesized solely by integrating the learned vector field, without test-time optimization or auxiliary physical guidance. Across MultiDex and zero-shot RealDex benchmarks, DEAL-Grasp attains high force-perturbation success rates alongside minimal penetration and high diversity of generated grasps, while substantially reducing native inference latency compared to optimization-heavy baselines.</p>
       </section>
 
       <hr class="section-divider" />
