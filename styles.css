@@ -56,7 +56,7 @@ img, video { display: block; max-width: 100%; }
 .resource-link .brand-icon { display: block; width: 24px; height: 24px; flex: none; object-fit: contain; }
 .disabled { color: #8b969b; background: #fafafa; cursor: default; }
 
-.hero-video video { width: 95%; margin: 0 auto; aspect-ratio: 16 / 9; object-fit: contain; }
+.hero-video video { width: 95%; margin: 14px auto 0; aspect-ratio: 16 / 9; object-fit: contain; }
 .hero-video .caption { width: 95%; margin: 9px auto 0; }
 .section-divider { width: min(var(--max), calc(100% - 64px)); margin: 70px auto; border: 0; border-top: 1px solid var(--line); }
 .teaser-section { padding-top: 46px; }
